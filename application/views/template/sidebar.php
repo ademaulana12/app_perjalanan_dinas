@@ -25,7 +25,7 @@
                     <?php
                     if ($hak_akses == '1') { ?>
                         <li class="nav-item">
-                            <a href="<?= base_url('dashboard/dashboard_admin'); ?>" class="nav-link <?php if ($this->uri->segment(2) == 'dashboard') {
+                            <a href="<?= base_url('dashboard/dashboard_admin'); ?>" class="nav-link <?php if ($this->uri->segment(2) == 'dashboard_admin') {
                                                                                                         echo 'active';
                                                                                                     } else {
                                                                                                         echo '';
@@ -36,7 +36,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= base_url('dashboard/request_perjalanan'); ?>" class="nav-link <?php if ($this->uri->segment(2) == 'request') {
+                            <a href="<?= base_url('dashboard/request_perjalanan'); ?>" class="nav-link <?php if ($this->uri->segment(2) == 'request_perjalanan') {
                                                                                                             echo 'active';
                                                                                                         } else {
                                                                                                             echo '';
