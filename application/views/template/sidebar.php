@@ -25,7 +25,7 @@
                     <?php
                     if ($hak_akses == '1') { ?>
                         <li class="nav-item">
-                            <a href="<?= base_url('dashboard/dashboard_admin'); ?>" class="nav-link <?php if ($this->uri->segment(1) == 'dashboard') {
+                            <a href="<?= base_url('dashboard/dashboard_admin'); ?>" class="nav-link <?php if ($this->uri->segment(2) == 'dashboard') {
                                                                                                         echo 'active';
                                                                                                     } else {
                                                                                                         echo '';
@@ -36,7 +36,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= base_url('dashboard/request_perjalanan'); ?>" class="nav-link <?php if ($this->uri->segment(1) == 'request') {
+                            <a href="<?= base_url('dashboard/request_perjalanan'); ?>" class="nav-link <?php if ($this->uri->segment(2) == 'request') {
                                                                                                             echo 'active';
                                                                                                         } else {
                                                                                                             echo '';
@@ -47,7 +47,7 @@
                         </li>
                     <?php } else if ($hak_akses == '9') { ?>
                         <li class="nav-item">
-                            <a href="<?= base_url('dashboard'); ?>" class="nav-link <?php if ($this->uri->segment(1) == 'dashboard') {
+                            <a href="<?= base_url('dashboard'); ?>" class="nav-link <?php if ($this->uri->segment(2) == 'dashboard') {
                                                                                         echo 'active';
                                                                                     } else {
                                                                                         echo '';
@@ -58,7 +58,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= base_url('request'); ?>" class="nav-link <?php if ($this->uri->segment(1) == 'request') {
+                            <a href="<?= base_url('request'); ?>" class="nav-link <?php if ($this->uri->segment(2) == 'request') {
                                                                                         echo 'active';
                                                                                     } else {
                                                                                         echo '';
@@ -69,7 +69,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?= base_url('status_request'); ?>" class="nav-link <?php if ($this->uri->segment(1) == 'status_request') {
+                            <a href="<?= base_url('status_request'); ?>" class="nav-link <?php if ($this->uri->segment(2) == 'status_request') {
                                                                                                 echo 'active';
                                                                                             } else {
                                                                                                 echo '';
